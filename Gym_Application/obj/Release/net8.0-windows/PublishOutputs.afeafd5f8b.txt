@@ -2,6 +2,7 @@ C:\Users\trainings\Desktop\WebForm\Gym_Application\publish\Gym_Application.exe
 C:\Users\trainings\Desktop\WebForm\Gym_Application\publish\Gym_Application.dll
 C:\Users\trainings\Desktop\WebForm\Gym_Application\publish\Gym_Application.deps.json
 C:\Users\trainings\Desktop\WebForm\Gym_Application\publish\Gym_Application.runtimeconfig.json
+C:\Users\trainings\Desktop\WebForm\Gym_Application\publish\Gym_Application.dll.config
 C:\Users\trainings\Desktop\WebForm\Gym_Application\publish\Gym_Application.pdb
 C:\Users\trainings\Desktop\WebForm\Gym_Application\publish\System.Data.SqlClient.dll
 C:\Users\trainings\Desktop\WebForm\Gym_Application\publish\runtimes\win-arm64\native\sni.dll

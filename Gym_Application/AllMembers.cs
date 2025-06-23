@@ -18,7 +18,7 @@ namespace Gym_Application {
         private void LoadMembers() {
             using (SqlConnection conn = Database.GetConnection()) {
                 conn.Open();
-                string query = "SELECT top 10 * from tadnreportchild ";
+                string query = "SELECT * from gymManagement ";
                 using (SqlCommand cmd = new SqlCommand(query, conn)) {
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
                         DataTable dt = new DataTable();
@@ -40,13 +40,24 @@ namespace Gym_Application {
             AddMembers addMembers = new AddMembers(buttonText);
 
             addMembers.ShowDialog();
+            LoadMembers();
         }
 
         private void delete_btn_Click(object sender, EventArgs e) {
             if (dataGridView1.SelectedRows.Count > 0) {
+                if (dataGridView1.SelectedRows.Count == 0) {
+                    MessageBox.Show("Please select a member first.");
+                    return;
+                }
+
                 var selectedRow = dataGridView1.SelectedRows[0];
-                //int memberId = Convert.ToInt32(selectedRow.Cells["Id"].Value); // Change "Id" to your actual Id column name
-                int memberId = Convert.ToInt32(selectedRow.Cells["copkchildid"].Value);
+
+                if (selectedRow.Cells["Id"]?.Value == null || string.IsNullOrWhiteSpace(selectedRow.Cells["Id"].Value.ToString())) {
+                    MessageBox.Show("Invalid selection. Member ID is missing.");
+                    return;
+                }
+
+                int memberId = Convert.ToInt32(selectedRow.Cells["Id"].Value);
 
                 DialogResult result = MessageBox.Show($"Are you sure you want to delete Member ID: {memberId}?","Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
@@ -64,7 +75,7 @@ namespace Gym_Application {
             using (SqlConnection conn = Database.GetConnection()) {
                 conn.Open();
 
-                string query = "DELETE FROM tadnreportchild WHERE Id = @Id";
+                string query = "DELETE FROM gymManagement WHERE Id = @Id";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn)) {
                     cmd.Parameters.AddWithValue("@Id", id);

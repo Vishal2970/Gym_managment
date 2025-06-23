@@ -10,8 +10,6 @@ namespace Gym_Application {
 
         private void add_Member_Click(object sender, EventArgs e) {
             AddMembers add = new AddMembers("");
-
-            //LoadMembers(); use data base example
             add.ShowDialog();
         }
         private void pay_Fees_Click(object sender, EventArgs e) {

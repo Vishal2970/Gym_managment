@@ -27,3 +27,4 @@ C:\Users\trainings\Desktop\WebForm\Gym_Application\Gym_Application\obj\Debug\net
 C:\Users\trainings\Desktop\WebForm\Gym_Application\Gym_Application\obj\Debug\net8.0-windows\Gym_Application.pdb
 C:\Users\trainings\Desktop\WebForm\Gym_Application\Gym_Application\obj\Debug\net8.0-windows\Gym_Application.genruntimeconfig.cache
 C:\Users\trainings\Desktop\WebForm\Gym_Application\Gym_Application\obj\Debug\net8.0-windows\ref\Gym_Application.dll
+C:\Users\trainings\Desktop\WebForm\Gym_Application\Gym_Application\bin\Debug\net8.0-windows\Gym_Application.dll.config
