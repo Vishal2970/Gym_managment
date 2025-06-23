@@ -1,37 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\",
+  "WorkspaceRootPath": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\trainings\\desktop\\webform\\gym_application\\gym_application\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\trainings\\desktop\\webform\\gym_application\\gym_application\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\trainings\\desktop\\webform\\gym_application\\gym_application\\allmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\allmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\trainings\\desktop\\webform\\gym_application\\gym_application\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\gym_application\\allmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\allmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\trainings\\desktop\\webform\\gym_application\\gym_application\\payfees.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\payfees.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\trainings\\desktop\\webform\\gym_application\\gym_application\\payfees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\acer\\desktop\\project_cshrp\\gym_managment\\gym_application\\payfees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\payfees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\gym_application\\payfees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\acer\\desktop\\project_cshrp\\gym_managment\\gym_application\\expiredmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\expiredmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\acer\\desktop\\project_cshrp\\gym_managment\\gym_application\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\acer\\desktop\\project_cshrp\\gym_managment\\gym_application\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\acer\\desktop\\project_cshrp\\gym_managment\\gym_application\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\acer\\desktop\\project_cshrp\\gym_managment\\gym_application\\allmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\allmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\acer\\desktop\\project_cshrp\\gym_managment\\gym_application\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\gym_application\\allmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\allmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|c:\\users\\acer\\desktop\\project_cshrp\\gym_managment\\gym_application\\payfees.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\payfees.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\gym_application\\payfees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{644E2742-7B56-4C5E-A429-121502A99155}|Gym_Application\\Gym_Application.csproj|solutionrelative:gym_application\\payfees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -42,29 +50,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\Form1.cs",
               "RelativeDocumentMoniker": "Gym_Application\\Form1.cs",
-              "ToolTip": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\Form1.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\Form1.cs",
               "RelativeToolTip": "Gym_Application\\Form1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T04:41:28.408Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "PayFees.cs",
-              "DocumentMoniker": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\PayFees.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\PayFees.cs",
               "RelativeDocumentMoniker": "Gym_Application\\PayFees.cs",
-              "ToolTip": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\PayFees.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\PayFees.cs",
               "RelativeToolTip": "Gym_Application\\PayFees.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAowDwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,38 +80,64 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\App.config",
-              "RelativeDocumentMoniker": "Gym_Application\\App.config",
-              "ToolTip": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\App.config",
-              "RelativeToolTip": "Gym_Application\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-06-23T13:04:30.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Database.cs",
-              "DocumentMoniker": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\Database.cs",
-              "RelativeDocumentMoniker": "Gym_Application\\Database.cs",
-              "ToolTip": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\Database.cs",
-              "RelativeToolTip": "Gym_Application\\Database.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T13:01:59.023Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AddMembers.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\AddMembers.cs",
+              "RelativeDocumentMoniker": "Gym_Application\\AddMembers.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\AddMembers.cs",
+              "RelativeToolTip": "Gym_Application\\AddMembers.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAEwMcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T16:04:20.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExpiredMembers.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\ExpiredMembers.cs",
+              "RelativeDocumentMoniker": "Gym_Application\\ExpiredMembers.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\ExpiredMembers.cs",
+              "RelativeToolTip": "Gym_Application\\ExpiredMembers.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAawCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T16:04:20.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\App.config",
+              "RelativeDocumentMoniker": "Gym_Application\\App.config",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\App.config",
+              "RelativeToolTip": "Gym_Application\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-23T13:04:30.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\Database.cs",
+              "RelativeDocumentMoniker": "Gym_Application\\Database.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\Database.cs",
+              "RelativeToolTip": "Gym_Application\\Database.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T13:01:59.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AllMembers.cs",
-              "DocumentMoniker": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\AllMembers.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\AllMembers.cs",
               "RelativeDocumentMoniker": "Gym_Application\\AllMembers.cs",
-              "ToolTip": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\AllMembers.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\AllMembers.cs",
               "RelativeToolTip": "Gym_Application\\AllMembers.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -113,40 +146,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AllMembers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\AllMembers.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\AllMembers.cs",
               "RelativeDocumentMoniker": "Gym_Application\\AllMembers.cs",
-              "ToolTip": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\AllMembers.cs [Design]",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\AllMembers.cs [Design]",
               "RelativeToolTip": "Gym_Application\\AllMembers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:48:52.952Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-23T12:48:52.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "PayFees.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\PayFees.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\PayFees.Designer.cs",
               "RelativeDocumentMoniker": "Gym_Application\\PayFees.Designer.cs",
-              "ToolTip": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\PayFees.Designer.cs",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\PayFees.Designer.cs",
               "RelativeToolTip": "Gym_Application\\PayFees.Designer.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAvwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:46:26.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T12:46:26.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "PayFees.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\PayFees.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\PayFees.cs",
               "RelativeDocumentMoniker": "Gym_Application\\PayFees.cs",
-              "ToolTip": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\Gym_Application\\PayFees.cs [Design]",
+              "ToolTip": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\Gym_Application\\PayFees.cs [Design]",
               "RelativeToolTip": "Gym_Application\\PayFees.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:40:54.388Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-23T12:40:54.388Z"
             }
           ]
         }

@@ -1,0 +1,5 @@
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
+https://aka.ms/ssmsfullsetup
+
+https://go.microsoft.com/fwlink/p/?linkid=2216019&clcid=0x4009&culture=en-in&country=in

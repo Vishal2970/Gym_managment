@@ -1,0 +1,12 @@
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\Gym_Application.exe
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\Gym_Application.dll
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\Gym_Application.deps.json
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\Gym_Application.runtimeconfig.json
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\Gym_Application.dll.config
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\Gym_Application.pdb
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\System.Data.SqlClient.dll
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\runtimes\win-arm64\native\sni.dll
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\runtimes\win-x64\native\sni.dll
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\runtimes\win-x86\native\sni.dll
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\ACER\Desktop\Project_cShrp\Gym_managment\publish\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
