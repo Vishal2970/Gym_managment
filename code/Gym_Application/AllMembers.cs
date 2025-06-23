@@ -14,6 +14,18 @@ namespace Gym_Application {
         public AllMembers() {
             InitializeComponent();
             LoadMembers();
+            Update_btn.Enabled = false;
+            delete_btn.Enabled=false;
+            dataGridView1.SelectionChanged += seectedTab;
+
+        }
+        private void seectedTab(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                Update_btn.Enabled = true;
+                delete_btn.Enabled = true;
+            }
         }
         private void LoadMembers() {
             using (SqlConnection conn = Database.GetConnection()) {
@@ -31,13 +43,15 @@ namespace Gym_Application {
         }
 
         private void add_Member_Click(object sender, EventArgs e) {
-            AddMembers addMembers = new AddMembers("");
+            var selectedRow = dataGridView1.SelectedRows[0];
+            AddMembers addMembers = new AddMembers("",selectedRow);
             addMembers.ShowDialog();
         }
 
         private void Update_btn_Click(object sender, EventArgs e) {
             string buttonText = "Update";
-            AddMembers addMembers = new AddMembers(buttonText);
+            var selectedRow = dataGridView1.SelectedRows[0];
+            AddMembers addMembers = new AddMembers(buttonText,selectedRow);
 
             addMembers.ShowDialog();
             LoadMembers();

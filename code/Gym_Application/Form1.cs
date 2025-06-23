@@ -23,7 +23,8 @@ namespace Gym_Application {
 
 
         private void add_Member_Click(object sender, EventArgs e) {
-            AddMembers add = new AddMembers("");
+            object selectedMember = null;
+            AddMembers add = new AddMembers("",selectedMember);
             add.ShowDialog();
         }
         private void pay_Fees_Click(object sender, EventArgs e) {

@@ -15,72 +15,132 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace Gym_Application {
-    public partial class AddMembers : Form {
-        static int memberlength=0;
-        public AddMembers(string btn) {
-           
+    public partial class AddMembers : Form
+    {
+        static int memberlength = 0;
+        public AddMembers(string btn,object selectedTabs)
+        {
             InitializeComponent();
-            if (!string.IsNullOrEmpty(btn)) {
+
+            if (!string.IsNullOrEmpty(btn))
+            {
                 button1.Text = btn;
             }
+            // Check if it is empty
+            if (selectedTabs != null)
+            {
+               
+            }
             LoadMembers();
+
+            // Set max length and numeric-only input
+            mobileNumber.MaxLength = 10;
+            mobileNumber.KeyPress += MobileNumber_KeyPress;
+            aadharNumber.MaxLength = 12;
+            aadharNumber.KeyPress += MobileNumber_KeyPress;
+            id.KeyPress += MobileNumber_KeyPress;
+
+            // Disable button1 initially
+            button1.Enabled = false;
+
+            // Monitor when text is typed/changed
+            mobileNumber.TextChanged += InputFields_TextChanged;
+            aadharNumber.TextChanged += InputFields_TextChanged;
+            id.TextChanged += InputFields_TextChanged;
         }
-        private void button1_Click(object sender, EventArgs e) {
+
+        private void MobileNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Allow only digits and control keys (like backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void InputFields_TextChanged(object sender, EventArgs e)
+        {
+            bool isMobileFilled = mobileNumber.Text.Length == 10;
+            bool isAadharFilled = aadharNumber.Text.Length == 12;
+            bool isIdFilled = !string.IsNullOrWhiteSpace(id.Text);
+
+            // Enable button1 only if all are valid
+            button1.Enabled = isMobileFilled && isAadharFilled && isIdFilled;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             string name = member_name.Text;
             string mobile = mobileNumber.Text;
             string aadhar = aadharNumber.Text;
             // --- Validation ---
-            if (this.button1.Text == "Add Member") {
-                if (!Regex.IsMatch(name, @"^[a-zA-Z\s]+$")) {
+            if (this.button1.Text == "Add Member")
+            {
+                if (!Regex.IsMatch(name, @"^[a-zA-Z\s]+$"))
+                {
                     MessageBox.Show("Member name should contain only letters.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                if (!Regex.IsMatch(mobile, @"^\d{10}$")) {
+                if (!Regex.IsMatch(mobile, @"^\d{10}$"))
+                {
                     MessageBox.Show("Mobile number must be exactly 10 digits.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                if (!Regex.IsMatch(aadhar, @"^\d{12}$")) {
+                if (!Regex.IsMatch(aadhar, @"^\d{12}$"))
+                {
                     MessageBox.Show("Aadhar number must be exactly 12 digits.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
 
             int? memberId = null;
-            if (this.button1.Text != "Add Member") {
-                if (string.IsNullOrWhiteSpace(id.Text)) {
+            if (this.button1.Text != "Add Member")
+            {
+                if (string.IsNullOrWhiteSpace(id.Text))
+                {
                     MessageBox.Show("Member ID must be a valid number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
 
-                if (!string.IsNullOrWhiteSpace(id.Text)) {
-                if (int.TryParse(id.Text.Trim(), out int parsedId)) {
+            if (!string.IsNullOrWhiteSpace(id.Text))
+            {
+                if (int.TryParse(id.Text.Trim(), out int parsedId))
+                {
                     memberId = parsedId;
                 }
-                else {
+                else
+                {
                     MessageBox.Show("Member ID must be a valid number or left empty.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
 
             // Assign default ID if not provided
-            if (memberId == null) {
+            if (memberId == null)
+            {
                 memberId = memberlength + 1;
-                while (isHaving(memberId.Value)) {
+                while (isHaving(memberId.Value))
+                {
                     memberId = memberId.Value + 1;
                 }
             }
-            if (this.button1.Text == "Add Member") {
-                using (var inputForm = new CustomInputBox("Fees Payment", "How many months' fees do you want to pay?", "1")) {
-                    if (inputForm.ShowDialog() == DialogResult.OK) {
-                        if (int.TryParse(inputForm.InputText, out int months)) {
+            if (this.button1.Text == "Add Member")
+            {
+                using (var inputForm = new CustomInputBox("Fees Payment", "How many months' fees do you want to pay?", "1"))
+                {
+                    if (inputForm.ShowDialog() == DialogResult.OK)
+                    {
+                        if (int.TryParse(inputForm.InputText, out int months))
+                        {
                             MessageBox.Show($"You chose to pay fees for {months} month(s).");
                             DateTime selectedDate = dateTimePicker1.Value;
-                            InsertMember(memberId.Value, name, mobile, aadhar, months,selectedDate.ToString());
+                            InsertMember(memberId.Value, name, mobile, aadhar, months, selectedDate.ToString());
                         }
-                        else {
+                        else
+                        {
                             MessageBox.Show("Please enter a valid number.");
                         }
                     }
@@ -92,53 +152,65 @@ namespace Gym_Application {
                 this.id.Text = "";
                 LoadMembers();
             }
-            else {
+            else
+            {
                 DateTime selectedDate = dateTimePicker1.Value;
                 UpdateMember(memberId.Value, name, mobile, aadhar, selectedDate.ToString());
                 this.Close();
             }
         }
-        private Boolean isHaving(int id) {
-            using (SqlConnection conn = Database.GetConnection()) {
+        private Boolean isHaving(int id)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
                 conn.Open();
 
                 string checkQuery = @"SELECT COUNT(*) FROM gymManagement WHERE Id = @Id ";
 
 
-                using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn)) {
+                using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
+                {
                     checkCmd.Parameters.AddWithValue("@Id", id);
                     int count = (int)checkCmd.ExecuteScalar();
 
-                    if (count > 0) {
+                    if (count > 0)
+                    {
                         return true;
                     }
                 }
             }
             return false;
         }
-        private void LoadMembers() {
-            using (SqlConnection conn = Database.GetConnection()) {
+        private void LoadMembers()
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
                 conn.Open();
                 string query = "SELECT * from gymManagement ";
-                using (SqlCommand cmd = new SqlCommand(query, conn)) {
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd)) {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
                         DataTable dt = new DataTable();
                         adapter.Fill(dt);
                         dataGridView1.ClearSelection();
                         dataGridView1.DataSource = dt;
-                        memberlength=dt.Rows.Count;
+                        memberlength = dt.Rows.Count;
                     }
                 }
             }
         }
-        private void InsertMember(int id, string name,string mobileNumber, string aadharNumber,int months,string dateSelected) {
-            using (SqlConnection conn = Database.GetConnection()) {
+        private void InsertMember(int id, string name, string mobileNumber, string aadharNumber, int months, string dateSelected)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
                 conn.Open();
 
                 string checkQuery = @"SELECT COUNT(*) FROM gymManagement WHERE Id = @Id OR MobileNumber = @MobileNumber OR AadharNumber = @AadharNumber";
 
 
-                using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn)) {
+                using (SqlCommand checkCmd = new SqlCommand(checkQuery, conn))
+                {
                     checkCmd.Parameters.AddWithValue("@Id", id);
                     checkCmd.Parameters.AddWithValue("@MobileNumber", mobileNumber);
                     checkCmd.Parameters.AddWithValue("@AadharNumber", aadharNumber);
@@ -146,7 +218,8 @@ namespace Gym_Application {
 
                     int count = (int)checkCmd.ExecuteScalar();
 
-                    if (count > 0) {
+                    if (count > 0)
+                    {
                         MessageBox.Show("Member with this ID, Mobile Number, or Aadhar Number already exists.", "Duplicate Entry", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
@@ -158,7 +231,6 @@ namespace Gym_Application {
 
                 // Set the membership date
                 DateTime membershipDate = DateTime.UtcNow;
-
                 if (months != 0)
                 {
                     membershipDate = membershipDate.AddDays(months * 30);
@@ -172,7 +244,7 @@ namespace Gym_Application {
                     insertCmd.Parameters.AddWithValue("@AadharNumber", aadharNumber);
 
                     // Pass DateTime object directly
-                    insertCmd.Parameters.AddWithValue("@MemberShipDate", membershipDate);
+                    insertCmd.Parameters.AddWithValue("@MemberShipDate", DateTime.UtcNow);
 
                     // Assuming FeesPayed is meant to store the date string as a log (you can clarify)
                     insertCmd.Parameters.AddWithValue("@FeesPayed", membershipDate.ToString("yyyy-MM-dd"));
@@ -192,8 +264,10 @@ namespace Gym_Application {
             }
         }
 
-        private void UpdateMember(int id, string name, string mobileNumber, string aadharNumber,string date) {
-            using (SqlConnection conn = Database.GetConnection()) {
+        private void UpdateMember(int id, string name, string mobileNumber, string aadharNumber, string date)
+        {
+            using (SqlConnection conn = Database.GetConnection())
+            {
                 conn.Open();
 
                 // Build the SET clause dynamically
@@ -201,17 +275,20 @@ namespace Gym_Application {
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
 
-                if (!string.IsNullOrEmpty(name)) {
+                if (!string.IsNullOrEmpty(name))
+                {
                     updates.Add("Name = @Name");
                     cmd.Parameters.AddWithValue("@Name", name);
                 }
 
-                if (!string.IsNullOrEmpty(mobileNumber)) {
+                if (!string.IsNullOrEmpty(mobileNumber))
+                {
                     updates.Add("MobileNumber = @MobileNumber");
                     cmd.Parameters.AddWithValue("@MobileNumber", mobileNumber);
                 }
 
-                if (!string.IsNullOrEmpty(aadharNumber)) {
+                if (!string.IsNullOrEmpty(aadharNumber))
+                {
                     updates.Add("AadharNumber = @AadharNumber");
                     cmd.Parameters.AddWithValue("@AadharNumber", aadharNumber);
                 }
@@ -232,7 +309,8 @@ namespace Gym_Application {
 
 
                 // Agar koi update field hi nahi hai to return karo
-                if (updates.Count == 0) {
+                if (updates.Count == 0)
+                {
                     MessageBox.Show("No data provided to update.");
                     return;
                 }
@@ -244,14 +322,15 @@ namespace Gym_Application {
 
                 int rowsAffected = cmd.ExecuteNonQuery();
 
-                if (rowsAffected > 0) {
+                if (rowsAffected > 0)
+                {
                     MessageBox.Show("Member updated successfully.");
                 }
-                else {
+                else
+                {
                     MessageBox.Show("Update failed. Member not found.");
                 }
             }
         }
-
     }
 }

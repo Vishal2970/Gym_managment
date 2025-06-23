@@ -22,7 +22,8 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent() {
+        private void InitializeComponent()
+        {
             dataGridView1 = new DataGridView();
             button1 = new Button();
             member_name = new TextBox();
@@ -64,6 +65,8 @@
             member_name.Name = "member_name";
             member_name.Size = new Size(204, 23);
             member_name.TabIndex = 2;
+            member_name.CharacterCasing = CharacterCasing.Upper;
+
             // 
             // mobileNumber
             // 
