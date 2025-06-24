@@ -172,23 +172,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACER\\.nuget\\packages\\": {},
+    "C:\\Users\\trainings\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\code\\Gym_Application\\Gym_Application.csproj",
+      "projectUniqueName": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\code\\Gym_Application\\Gym_Application.csproj",
       "projectName": "Gym_Application",
-      "projectPath": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\code\\Gym_Application\\Gym_Application.csproj",
-      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ACER\\Desktop\\Project_cShrp\\Gym_managment\\code\\Gym_Application\\obj\\",
+      "projectPath": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\code\\Gym_Application\\Gym_Application.csproj",
+      "packagesPath": "C:\\Users\\trainings\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\trainings\\Desktop\\WebForm\\Gym_Application\\code\\Gym_Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\trainings\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -197,6 +197,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -245,7 +246,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
